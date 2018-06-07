@@ -73,15 +73,6 @@ void sound(){ //muziek afspelen na threshold waarde
 }
 
 void loop() { //functies oproepen
-    wissel = digitalRead(wisselPin);
-  if (wissel == 1){
-    lcd.setCursor(15,0);
-    lcd.print("1");
-    }
-    else{
-      lcd.setCursor(15,0);
-      lcd.print("0"); 
-      }
   lcd.setCursor(0,0);
   lcd.print("Referentie :");
   lcd.print(analogRead(refPin));
